@@ -1,13 +1,15 @@
-import Card from "./components/Card"
+import { ThemeProvider } from "styled-components";
+import { Input } from "./components/Inputs";
+import theme from "./theme/theme";
 
 
 function App() {
 
   return (
-    <div>
-      <Card />
-    </div>
-  )
+    <ThemeProvider theme={theme}>
+      <Input />
+    </ThemeProvider>
+  );
 }
 
-export default App
+export default App;
